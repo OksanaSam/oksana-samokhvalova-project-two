@@ -1,3 +1,8 @@
+@mixin colors ($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+
 @mixin primaryFont ($fontSizeValue, $lineHeight) {
     font-size: $fontSizeValue * 1px;
     font-size: ($fontSizeValue/10) * 1rem;
@@ -5,7 +10,6 @@
     font-weight: regular;
     font-family: $primaryFontFamily;   
 }
-
 
 @mixin secondaryFont ($fontSizeValue, $lineHeight, $fontWeight)  {
     font-size: $fontSizeValue * 1px;
@@ -15,27 +19,9 @@
     font-family: $secondaryFontFamily;
 }
 
-@mixin flex ($flexFlow, $justifyContent, $alignItems, $alignContent) {
+@mixin flex ($flexFlow, $justifyContent, $alignItems) {
     display: flex;
     flex-flow: $flexFlow;
     justify-content: $justifyContent;
     align-items: $alignItems;
-    align-content: $alignContent;
 }
-
-@mixin position ($type: relative, $top: 0, $right: 0) { 
-    position: $type; 
-    top: $top;
-    right: $right;
-  }
-
-  @mixin colors ($background, $color) {
-    background-color: $background;
-    color: $color;
-  }
-  
-  @mixin paddingMargin ($padding, $margin) {
-    padding: $padding;
-    margin: $margin;
-  }
-  

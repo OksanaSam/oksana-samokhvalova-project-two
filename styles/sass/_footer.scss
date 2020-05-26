@@ -1,7 +1,7 @@
 /* footer styles */
 footer {
     height: 5vh;
-    @include flex (row no-wrap, center, center, stretch);
+    @include flex (row no-wrap, center, center);
     @include colors ($fourthColor, $textColor);
     text-align: center;
 }

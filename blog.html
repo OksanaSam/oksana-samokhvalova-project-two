@@ -14,8 +14,8 @@
 <body> 
     <header id="blog" class="blog">
         <div class="wrapper">
-            <!-- As the pictures are not relevant to the content, I used background-image property instead of images coded in html for styling purposes. However, as there are no alt tags, I included img role and aria label for accessibility compliance -->
-            <span role="img" aria-label="A person riding a bicycle"></span>
+            <!-- As the background image does not have alt tags, I included img role and aria label for accessibility compliance -->
+            <span role="img" aria-label="A child riding a bicycle"></span>
             <nav>
                 <!--The label for the mobile hamburger menu. When toggle is clicked, the browser (un)checks the associated checkbox-->
                 <label for="toggle"><i class="fa fa-bars"></i></label>
@@ -34,29 +34,47 @@
         <div class="wrapper">
             <section class="blog-section">
                 <div class="side-subsection">
-                    <img src="./assets/blog-side-image.jpg" alt="Crayons">
-                    <h4>Our mission</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis obcaecati mollitia vitae cumque error sapiente. Modi provident distinctio rem sequi.</p>
-                    <h4>Recent posts</h4>
-                    <ul>
-                        <li>Nobis obcaecati mollitia</li>
-                        <li>Modi provident distinctio</li>
-                        <li>Lorem ipsum dolor </li>
-                        <li>Vitae cumque error sapiente</li>
-                    </ul>
+                    <img src="./assets/blog-side-image.jpg" alt="Kids unpacking a box of crayons">
+                    <div class="side-text">
+                        <h4>Our mission</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis obcaecati mollitia vitae cumque error sapiente. Modi provident distinctio rem sequi.</p>
+                        <h4>Recent posts</h4>
+                        <ul>
+                            <li>Nobis obcaecati mollitia</li>
+                            <li>Modi provident distinctio</li>
+                            <li>Lorem ipsum dolor </li>
+                            <li>Vitae cumque error sapiente</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="main-subsection">
-                    <div>
+                    <div class="outlined-area">
                         <img src="./assets/blog-post-imag.jpg" alt="Soap bubbles">
-                        <h2>New activities</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo maxime atque eligendi consequatur aut modi esse illum quidem nemo.</p>
+                        <div class="outlined-text">
+                            <h2>New activities</h2>
+                            <h5>Monday January 30, 2019 by Saron</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo maxime atque eligendi consequatur aut modi esse illum quidem nemo.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum, voluptates obcaecati explicabo, dolor eligendi mollitia animi libero quos eos dicta? Dignissimos velit cumque suscipit ullam nobis voluptatibus sequi fuga?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus temporibus a perferendis repellendus vel ullam reprehenderit eaque! Expedita fuga dolore ab sint consequuntur quos! Quam repellendus est placeat deserunt totam omnis ipsa cum distinctio non, eaque sapiente quo illo? Perspiciatis neque temporibus possimus at fugit error dolor facere laudantium.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus culpa quisquam ut est et earum enim minus perferendis, repellendus blanditiis.</p>
+                        </div>
                     </div>
-                    <h2>Comments:</h2>
-                    <div class="comment">
-                        <img src="./assets/comment-1.jpg" alt="A picture of a woman wearing glasses">
-                    </div>
-                    <div class="comment">
-                        <img src="./assets/comment-2.jpg" alt="A picture of a woman wearing glasses">
+                    <div class="comment-subsection">
+                        <h2>Comments:</h2>
+                        <div class="comment">
+                            <img src="./assets/comment-1.jpg" alt="A portrait picture of a woman wearing glasses">
+                            <div class="comment-text">
+                                <h5>Tuesday October 9th, 2019 by Miriama</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores exercitationem qui velit porro vel sapiente, delectus quidem illo officiis. Soluta.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img src="./assets/comment-2.jpg" alt="A portrait picture of a man">
+                            <div class="comment-text">
+                                <h5>Tuesday October 10th, 2019 by Rob</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores exercitationem qui velit porro vel sapiente, delectus quidem illo officiis. Soluta.</p>
+                            </div>
+                        </div>
                     </div>
                     <form action="#" class="blog">
                         <label for="name"></label>
@@ -72,7 +90,7 @@
     </main>
     <footer class="blog">
         <div class="wrapper">
-            <p>Copyright © 2020 HackerYou</p>
+            <p>Copyright <span>&copy;</span> 2020 HackerYou</p>
         </div>
     </footer>
 </body>

@@ -933,268 +933,56 @@ button:hover, button:focus {
   }
 }
 
-/* info-section styles */
-.info-section {
-  padding-top: 10vh;
+/* general header styles for all pages */
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  padding-top: 4%;
+}
+
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
 }
 
-.box-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  padding-bottom: 10px;
+header nav ul a {
+  padding: 15px;
+  color: #f3faff;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 29px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
-.box-one h2 {
-  margin-bottom: 5px;
-  font-size: 45px;
-  font-size: 4.5rem;
+header nav ul a:hover, header nav ul a:focus {
+  color: #08fded;
+  border-bottom: 2px solid #08fded;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 121.2px;
+  font-size: 12.12rem;
   line-height: 99.8px;
   font-weight: regular;
   font-family: "Walter Turncoat", cursive;
 }
 
-.box-one div:first-child {
-  width: 5rem;
-  height: 5rem;
-  background-color: #08fded;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  margin: 30px 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-.info-section i {
-  color: #474bb5;
-  font-size: 3.5rem;
-}
-
-/* offers-section styles */
-.offers-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.box-two img {
-  -webkit-box-shadow: 20px 20px #08fded;
-          box-shadow: 20px 20px #08fded;
-  position: relative;
-  left: -5%;
-  bottom: 20px;
-  width: 50%;
-  position: relative;
-  height: 100%;
-}
-
-.offers-section h3 {
-  font-size: 40px;
-  font-size: 4rem;
-  line-height: 58px;
-  font-weight: regular;
-  font-family: "Walter Turncoat", cursive;
-  letter-spacing: 1.3px;
-}
-
-.offers-section .box-three {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 50px 20px;
-}
-
-/* banner-section styles */
-.banner-section {
-  background-image: url("../assets/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-}
-
-/* events-section styles */
-.events-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 0;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: calc(100% - 40px);
-}
-
-.events-section .box-four:first-of-type {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 45%;
-          flex: 1 0 45%;
-  margin-left: 20px;
-}
-
-.events-section .box-four:last-of-type {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 55%;
-          flex: 1 0 55%;
-  padding-left: 20px;
-}
-
-.events-section img {
-  -webkit-box-shadow: -20px 20px #08fded;
-          box-shadow: -20px 20px #08fded;
-}
-
-/* gallery-section styles */
-.gallery-section {
-  padding: 50px 0;
-}
-
-.gallery-section img {
-  margin: 0 auto;
-}
-
-.gallery-section ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.gallery-section ul li:first-of-type {
-  margin-right: 30px;
-}
-
-.gallery-section ul li:last-of-type {
-  margin-left: 30px;
-}
-
-@media (max-width: 900px) {
-  .box-one h2 {
-    font-size: 35px;
-    font-size: 3.5rem;
-    line-height: 99.8px;
-    font-weight: regular;
-    font-family: "Walter Turncoat", cursive;
-  }
-}
-
-@media (max-width: 768px) {
-  /* info-section styles */
-  .info-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .box-one {
-    width: 100%;
-  }
-  /* offers-section styles */
-  .box-two,
-  .box-three {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-  /* events-section styles */
-  .events-section {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .events-section .box-four:last-of-type {
-    padding-left: 0;
-  }
-  .events-section .box-four {
-    margin: 0;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-    text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-}
-
-@media (max-width: 480px) {
-  /* gallery-section styles */
-  .gallery-section {
-    margin: 0 auto;
-  }
-  .gallery-section ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .gallery-section ul li {
-    width: 100%;
-  }
-  .gallery-section ul li:first-of-type {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-  .gallery-section ul li:last-of-type {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-}
-
-/* header styles */
+/* home page header styles */
 header.home {
   background-image: url("../assets/home-header.jpg");
   position: relative;
@@ -1230,70 +1018,6 @@ header.home {
           flex-grow: 2;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-}
-
-header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 65vh;
-  padding-top: 4%;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  letter-spacing: 1px;
-}
-
-header nav ul a {
-  padding: 15px;
-  color: #f3faff;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 29px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-}
-
-header nav ul a:hover, header nav ul a:focus {
-  color: #08fded;
-  border-bottom: 2px solid #08fded;
-  cursor: pointer;
-}
-
-a {
-  position: relative;
-}
-
-a:hover::after {
-  width: 10px;
-  height: 1px;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  color: white;
-  content: "hey";
-}
-
-h1 {
-  font-size: 121.2px;
-  font-size: 12.12rem;
-  line-height: 99.8px;
-  font-weight: regular;
-  font-family: "Walter Turncoat", cursive;
 }
 
 /* nav styles */
@@ -1366,6 +1090,16 @@ header label[for="toggle"] {
     font-weight: regular;
     font-family: "Walter Turncoat", cursive;
   }
+  .header-picture {
+    bottom: -80px;
+    width: 100%;
+  }
+  .header-picture h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 0 0 25px 30px;
+  }
+  /* positioning the hamburger menu for mobile */
   header label[for="toggle"] {
     display: block;
   }
@@ -1379,7 +1113,7 @@ header label[for="toggle"] {
     z-index: 10;
     width: 40%;
     right: -40%;
-    top: 14%;
+    top: 12%;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     display: none;
@@ -1400,6 +1134,482 @@ header label[for="toggle"] {
   }
 }
 
+/* info-section styles */
+.info-section {
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.info-section .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.info-section .info-box h2 {
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 99.8px;
+  font-weight: regular;
+  font-family: "Walter Turncoat", cursive;
+}
+
+.info-section .info-box i {
+  color: #474bb5;
+  font-size: 2.5rem;
+}
+
+.info-box div:first-child {
+  width: 4rem;
+  height: 4rem;
+  background-color: #08fded;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin: 32px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* offers-section styles */
+.offers-section {
+  padding-top: 50px;
+}
+
+.offers-section button {
+  margin-top: 20px;
+}
+
+.top-offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+.top-offers div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  padding: 5% 7.5% 0 18%;
+}
+
+.top-offers .left-image {
+  -webkit-box-shadow: 20px 20px #08fded;
+          box-shadow: 20px 20px #08fded;
+}
+
+.bottom-offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+.bottom-offers div {
+  padding: 0 18% 0 7.5%;
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+
+.bottom-offers .right-image {
+  -webkit-box-shadow: -20px 20px #08fded;
+          box-shadow: -20px 20px #08fded;
+}
+
+h3 {
+  font-size: 40px;
+  font-size: 4rem;
+  line-height: 58px;
+  font-weight: regular;
+  font-family: "Walter Turncoat", cursive;
+  letter-spacing: 1.3px;
+}
+
+.road-trips {
+  text-align: center;
+  padding: 50px 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* banner-section styles */
+.banner-section {
+  background-image: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+/* events-section styles */
+.events-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 50px 0;
+  margin-left: 20px;
+}
+
+.events-section .events-box:last-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  padding: 0 0 20px 80px;
+}
+
+.events-section button {
+  margin-top: 15px;
+}
+
+.events-section img {
+  padding-top: 15px;
+  -webkit-box-shadow: -20px 20px #08fded;
+          box-shadow: -20px 20px #08fded;
+}
+
+/* gallery-section styles */
+.gallery-section {
+  padding: 50px 0;
+}
+
+.gallery-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.gallery-section ul img {
+  width: 100%;
+}
+
+.gallery-section ul li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.gallery-section ul li:first-of-type {
+  margin-right: 30px;
+}
+
+.gallery-section ul li:last-of-type {
+  margin-left: 30px;
+}
+
+@media (max-width: 900px) {
+  /* info-section styles */
+  h2 {
+    font-size: 35px;
+    font-size: 3.5rem;
+    line-height: 99.8px;
+    font-weight: regular;
+    font-family: "Walter Turncoat", cursive;
+  }
+  h3 {
+    font-size: 35px;
+    font-size: 3.5rem;
+    line-height: 50px;
+    font-weight: regular;
+    font-family: "Walter Turncoat", cursive;
+  }
+}
+
+@media (max-width: 768px) {
+  /* info-section styles */
+  .info-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-section .info-box {
+    width: 100%;
+  }
+  /* offers-section styles */
+  .offers-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 0;
+  }
+  .offers-section img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .top-offers,
+  .bottom-offers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .top-offers div,
+  .bottom-offers div {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+  /* events-section styles */
+  .events-section {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .events-section .events-box {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .events-section .events-box:last-of-type {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 13px;
+    font-size: 1.3rem;
+    line-height: 80.8px;
+    font-weight: regular;
+    font-family: "Walter Turncoat", cursive;
+  }
+  /* info-section styles */
+  .info-box div:first-child {
+    margin: 32px 3px;
+  }
+  /* events-section styles */
+  .events-section img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  /* gallery-section styles */
+  .gallery-section ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery-section ul li {
+    width: 100%;
+  }
+  .gallery-section ul li:first-of-type {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .gallery-section ul li:last-of-type {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+/* form styles */
+input[type="text"],
+input[type="email"] {
+  color: #f3faff;
+  margin: 0;
+  width: 47%;
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f3faff;
+  padding: 15px;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+input[type="text"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+input[type="text"] {
+  margin-right: 5%;
+}
+
+form {
+  background-color: #474bb5;
+  -webkit-box-shadow: 20px 20px 0px 0px #08fded;
+          box-shadow: 20px 20px 0px 0px #08fded;
+  position: relative;
+  bottom: 27%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 20px;
+  right: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 30px;
+}
+
+form button {
+  width: 100%;
+}
+
+textarea {
+  color: #f3faff;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #f3faff;
+  resize: none;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+textarea::-ms-input-placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+textarea::placeholder {
+  color: #f3faff;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  /* form styles */
+  form {
+    position: static;
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  /* form styles */
+  form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    margin: 0;
+  }
+  input[type="text"] {
+    margin-right: 0;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+}
+
 /* header styles */
 header.blog {
   background-image: url("../assets/blog-header.jpg");
@@ -1410,34 +1620,169 @@ header.blog h1 {
 }
 
 /* main styles */
+h2 {
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 52px;
+  font-weight: regular;
+  font-family: "Walter Turncoat", cursive;
+}
+
+h5 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
 .blog-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.side-subsection {
-  background-color: #474bb5;
-  margin-top: 40px;
-  text-align: left;
+.main-subsection {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.outlined-area {
+  border: 2px solid #08fded;
+  border-right: none;
+  position: relative;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  right: -12.5%;
+  bottom: 7%;
+}
+
+.outlined-area .outlined-text {
+  padding: 0 50px 40px 80px;
+}
+
+.outlined-area .outlined-text h2,
+.outlined-area .outlined-text h5 {
+  padding-bottom: 15px;
+}
+
+.outlined-area .outlined-text p {
+  padding-top: 10px;
+}
+
+.outlined-area img {
+  -webkit-box-shadow: -20px 20px #08fded;
+          box-shadow: -20px 20px #08fded;
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  position: relative;
+  right: -20px;
+  top: -20px;
+}
+
+/* main styles */
+.side-subsection {
+  background-color: #474bb5;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 40px 30px 40px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.side-subsection .side-text {
+  text-align: left;
   padding: 20px;
 }
 
-.side-subsection ul {
-  list-style-type: disc;
+.side-subsection .side-text h4 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 42px;
+  font-weight: regular;
+  font-family: "Walter Turncoat", cursive;
+}
+
+.side-subsection .side-text ul {
+  list-style-type: none;
+  padding-left: 10px;
 }
 
 .side-subsection img {
   position: relative;
-  left: -20%;
-  top: 0;
+  left: -50px;
+  top: -20px;
+}
+
+.side-subsection ul li:before {
+  content: "\2022";
+  color: #08fded;
+  font-weight: bold;
+  width: 2rem;
+  margin-left: -1rem;
+  display: inline-block;
+}
+
+.comment-subsection h2 {
+  padding: 10px 0 20px 20px;
+}
+
+.comment-subsection .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 40px;
+  margin-left: 20px;
+}
+
+.comment-subsection .comment .comment-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+form.blog {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  position: static;
+  margin: 0;
+}
+
+form.blog input[type="text"],
+form.blog input[type="email"] {
+  border-bottom: 2px solid #08fded;
+}
+
+form.blog textarea {
+  border: 2px solid #08fded;
+  height: 200px;
+}
+
+form.blog button {
+  color: #03697c;
 }
 
 @media (max-width: 768px) {
-  /* main styles */
+  header.blog h1 {
+    padding-top: 15vh;
+    line-height: auto;
+  }
   .blog-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1449,8 +1794,22 @@ header.blog h1 {
             align-items: center;
     text-align: center;
   }
+  .side-subsection {
+    padding: 10px;
+    margin: 25px 10px;
+  }
   .side-subsection img {
     position: static;
+  }
+  .outlined-area {
+    position: static;
+    border: none;
+  }
+  .outlined-area .outlined-text {
+    padding: 20px;
+  }
+  form.blog {
+    margin: 0 auto;
   }
 }
 
@@ -1496,8 +1855,6 @@ header.contact h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .form-section ul a {
@@ -1682,8 +2039,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
   background-color: #044779;
   color: #f3faff;
   text-align: center;

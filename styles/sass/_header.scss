@@ -1,19 +1,35 @@
-/* header styles */
+/* general header styles for all pages */
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    padding-top: 4%;
+        nav ul {
+            @include flex(row no-wrap, flex-start, center);
+            letter-spacing: 1px;
+                a {
+                    padding: 15px;
+                    color: $textColor;
+                    @include secondaryFont (20, 29px, bold);
+                        &:hover,
+                        &:focus {
+                            color: $thirdColor;
+                            border-bottom: 2px solid $thirdColor;
+                            cursor: pointer;
+                    }
+                }
+        }
+}
+
+h1 {
+    @include primaryFont(121.2, 99.8px);
+}
+
+/* home page header styles */
 header.home {
     background-image: url('../assets/home-header.jpg');
     position: relative;
 }
-
-// header.home h1 {
-//     padding-top: 10%;
-// }
-
-// h1 {
-//     padding-top: 20vh;
-//     padding-right: 20px;
-//     // flex-basis: 100%;
-//     width: 45vw;
-// }
 
 .header-picture {
     display: flex;
@@ -34,60 +50,6 @@ header.home {
             flex-shrink: 1;
         }
 }
-
-// header.home img {
-//     width: 45%;
-//     position: absolute;
-//     bottom: -30vh;
-//     right: 0;
-// }
-
-// * {
-//     border: 1px solid yellow;
-// }
-
-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 65vh;
-    padding-top: 4%;
-        nav ul {
-            @include flex(row, flex-start, center, center);
-            letter-spacing: 1px;
-                a {
-                    padding: 15px;
-                    color: $textColor;
-                    @include secondaryFont (20, 29px, bold);
-                        &:hover,
-                        &:focus {
-                            color: $thirdColor;
-                            border-bottom: 2px solid $thirdColor;
-                            cursor: pointer;
-                    }
-                }
-        }
-}
- 
-a {
-    position: relative;
-}
-
-a:hover::after {
-    width: 10px;
-    height: 1px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    color: white;
-    content: "hey";
-}
-
-
-h1 {
-    @include primaryFont(121.2, 99.8px);
-}
-
-
 
 /* nav styles */
 header .selected {
@@ -144,6 +106,16 @@ header label[for="toggle"] {
         @include primaryFont(50, 85px);
     }
 
+    .header-picture {
+        bottom: -80px;
+        width: 100%;
+            h1 {
+                align-self: flex-start;
+                padding: 0 0 25px 30px;
+            }
+    }
+
+    /* positioning the hamburger menu for mobile */
     header label[for="toggle"] {
         display: block;
     }
@@ -155,7 +127,7 @@ header label[for="toggle"] {
         z-index: 10;
         width: 40%;
         right: -40%;
-        top: 14%;
+        top: 12%;
         transition: all 0.2s;
         display: none;
             li {
