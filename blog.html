@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link to favicon -->
+        <link type="image/png" href="assets/apple-touch-icon.png" rel="icon">
+        <title>FunPlace-Blog</title>
+        <!-- link to google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+        <!-- link to stylesheet -->
+        <link rel="stylesheet" href="styles/style.css">
+</head>
+<body> 
+    <header id="blog" class="blog">
+        <div class="wrapper">
+            <!-- As the pictures are not relevant to the content, I used background-image property instead of images coded in html for styling purposes. However, as there are no alt tags, I included img role and aria label for accessibility compliance -->
+            <span role="img" aria-label="A person riding a bicycle"></span>
+            <nav>
+                <!--The label for the mobile hamburger menu. When toggle is clicked, the browser (un)checks the associated checkbox-->
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle"/>
+                <ul class="top-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog" class="selected">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main class="blog">
+        <div class="wrapper">
+            <section class="blog-section">
+                <div class="side-subsection">
+                    <img src="./assets/blog-side-image.jpg" alt="Crayons">
+                    <h4>Our mission</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis obcaecati mollitia vitae cumque error sapiente. Modi provident distinctio rem sequi.</p>
+                    <h4>Recent posts</h4>
+                    <ul>
+                        <li>Nobis obcaecati mollitia</li>
+                        <li>Modi provident distinctio</li>
+                        <li>Lorem ipsum dolor </li>
+                        <li>Vitae cumque error sapiente</li>
+                    </ul>
+                </div>
+                <div class="main-subsection">
+                    <div>
+                        <img src="./assets/blog-post-imag.jpg" alt="Soap bubbles">
+                        <h2>New activities</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo maxime atque eligendi consequatur aut modi esse illum quidem nemo.</p>
+                    </div>
+                    <h2>Comments:</h2>
+                    <div class="comment">
+                        <img src="./assets/comment-1.jpg" alt="A picture of a woman wearing glasses">
+                    </div>
+                    <div class="comment">
+                        <img src="./assets/comment-2.jpg" alt="A picture of a woman wearing glasses">
+                    </div>
+                    <form action="#" class="blog">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button type="submit">Post comment</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="blog">
+        <div class="wrapper">
+            <p>Copyright © 2020 HackerYou</p>
+        </div>
+    </footer>
+</body>
+</html> 

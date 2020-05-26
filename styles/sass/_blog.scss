@@ -1,0 +1,43 @@
+/* header styles */
+header.blog {
+    background-image: url("../assets/blog-header.jpg");
+        h1 {
+            margin-top: 10vh;
+        }
+}
+
+ /* main styles */
+.blog-section {
+    display: flex;
+}
+
+.side-subsection {
+    background-color: $secondaryColor;
+    margin-top: 40px;
+    text-align: left;
+    height: fit-content;
+    padding: 20px;
+        ul {
+            list-style-type: disc;
+        };
+
+        img {
+            position: relative;
+            left: -20%;
+            top: 0;
+        }
+}
+
+@media(max-width: 768px) {
+    /* main styles */
+    .blog-section {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .side-subsection img {
+        position: static;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link to favicon -->
+    <link type="image/png" href="assets/apple-touch-icon.png" rel="icon">
+    <title>FunPlace-Home</title>
+    <!-- link to font awesome -->
+    <script src="https://kit.fontawesome.com/c60a364630.js" crossorigin="anonymous"></script>
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="home">
+    <header id="home" class="home">
+        <div class="wrapper">
+            <!-- As the background image does not have alt tags, I included img role and aria label for accessibility compliance -->
+            <span role="img" aria-label="A playground for children in front of a building"></span>
+            <nav>
+                <!--The label for the mobile hamburger menu. When toggle is clicked, the browser (un)checks the associated checkbox-->
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle"/>
+                <ul class="top-ul">
+                    <!-- I added a class "selected" to the corresponding menu li to show the users which page they are currently on -->
+                    <li><a href="#home" class="selected">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-picture">
+                <h1>FunPlace</h1>
+                <img src="./assets/home-box-header.jpg" alt="A person riding skateboard and wearing a helmet and elbow pads">
+            </div>
+        </div>
+    </header>
+    <main class="home">
+        <div class="wrapper">
+            <section class="info-section">
+                <div class="box-one">
+                    <div>
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div>
+                        <h2>New space</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+                <div class="box-one">
+                    <div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h2>Community</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+                <div class="box-one">
+                    <div>
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <div>
+                        <h2>Blog</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+                <div class="box-one">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h2>Get in touch</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="offers-section">
+            <div class="wrapper">
+                <div class="box-two">
+                    <img src="./assets/left-image.jpg" alt="A small girl with curly hair smiling">
+                </div>
+                <div class="box-two">
+                    <h3>Our programs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas, error consectetur odio, repudiandae iusto, maxime ratione voluptatibus sit tempore commodi suscipit. Impedit cum et pariatur, consequatur magni qui! Rerum, temporibus? Voluptas illo excepturi distinctio similique suscipit. Dicta, exercitationem veritatis?</p>
+                    <button>Read more</button>
+                </div>
+                <div class="box-two">
+                    <h3>New locations</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus unde recusandae itaque quo ipsum, illum repellendus iure odit! Doloribus doloremque molestiae nulla necessitatibus quam commodi sapiente quis dolore, blanditiis illum est debitis dicta eaque quidem, alias aspernatur itaque. Eos, recusandae!</p>
+                    <button>Read more</button>
+                </div>
+                <div class="box-two">
+                    <img src="./assets/right-image.jpg" alt="A cubic toy">
+                </div>
+                <div class="box-three">
+                    <h3>Road trips anyone?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur consectetur mollitia ad nesciunt voluptatibus possimus tenetur, eligendi provident dignissimos quisquam adipisci quasi delectus nihil deleniti fugiat non cum eius modi. Fugiat saepe similique consequuntur corrupti! Vitae exercitationem fuga quasi aliquam, sed earum eligendi impedit debitis sapiente eum repudiandae optio.</p>
+                    <button>Find out more</button>
+                </div>
+            </div>
+        </section>
+        <section class="banner-section-three"></section>
+        <section class="events-section">
+            <div class="wrapper">
+                <div class="box-four">
+                    <img src="./assets/small-box.jpg" alt="Two kids sitting">
+                </div>
+                <div class="box-four">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi necessitatibus corporis quibusdam impedit eos delectus molestiae aliquam sunt dignissimos natus quisquam aperiam labore harum facere reiciendis dolore eum quaerat, molestias sapiente! Optio quaerat necessitatibus quos totam vel porro alias. Quia rerum recusandae amet quam ex quisquam reprehenderit hic reiciendis! Quisquam reiciendis cumque officia architecto consequatur officiis sequi excepturi ipsa, sit possimus necessitatibus, blanditiis dicta deleniti eos? Ab maiores officiis quidem?</p>
+                    <button>Find out more</button>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <div class="wrapper">
+                <ul class="gallery">
+                    <li><img src="./assets/gallery-image-1.jpg" alt=""></li>
+                    <li><img src="./assets/gallery-image-2.jpg" alt=""></li>
+                    <li><img src="./assets/gallery-image-3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>       
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>Copyright <span>&copy;</span> 2020 HackerYou</p>
+        </div>
+    </footer>
+</body>
+</html>

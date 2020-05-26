@@ -1,0 +1,179 @@
+/* header styles */
+header.home {
+    background-image: url('../assets/home-header.jpg');
+    position: relative;
+}
+
+// header.home h1 {
+//     padding-top: 10%;
+// }
+
+// h1 {
+//     padding-top: 20vh;
+//     padding-right: 20px;
+//     // flex-basis: 100%;
+//     width: 45vw;
+// }
+
+.header-picture {
+    display: flex;
+    position: absolute;
+    width: 92.5%;
+    right: 0;
+    bottom: -10vh;
+        h1 {
+            flex-grow: 0;
+            padding-right: 30px;
+            align-self: center;
+            flex-shrink: 0;
+            flex-basis: 50%;
+        }
+        img {
+            // width: 45%;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+}
+
+// header.home img {
+//     width: 45%;
+//     position: absolute;
+//     bottom: -30vh;
+//     right: 0;
+// }
+
+// * {
+//     border: 1px solid yellow;
+// }
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    padding-top: 4%;
+        nav ul {
+            @include flex(row, flex-start, center, center);
+            letter-spacing: 1px;
+                a {
+                    padding: 15px;
+                    color: $textColor;
+                    @include secondaryFont (20, 29px, bold);
+                        &:hover,
+                        &:focus {
+                            color: $thirdColor;
+                            border-bottom: 2px solid $thirdColor;
+                            cursor: pointer;
+                    }
+                }
+        }
+}
+ 
+a {
+    position: relative;
+}
+
+a:hover::after {
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: white;
+    content: "hey";
+}
+
+
+h1 {
+    @include primaryFont(121.2, 99.8px);
+}
+
+
+
+/* nav styles */
+header .selected {
+        border-bottom: 2px solid $thirdColor;
+        &:hover {
+           cursor: default;
+           color: $textColor; 
+        }
+}
+
+header.home li:first-child a {
+    border-bottom: 2px solid $thirdColor;
+}
+
+header.blog li:nth-child(3) a {
+    border-bottom: 2px solid $thirdColor;
+}
+
+header.contact li:last-child a {
+    border-bottom: 2px solid $thirdColor;
+}
+
+header input[type="checkbox"] {
+	display: none;  /* hiding the input */
+}
+
+/* positioning the hamburger menu */
+header label[for="toggle"] {
+	display: none;
+    z-index: 10;
+    color: $textColor;
+    text-align: right;
+    font-size: 4.5rem;
+}
+
+@media(max-width: 900px) {
+    h1 {
+        @include primaryFont(110, 99.8px);
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        @include primaryFont(80, 85px);
+    }
+
+    .header-picture {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        @include primaryFont(50, 85px);
+    }
+
+    header label[for="toggle"] {
+        display: block;
+    }
+
+    .top-ul {
+        position: absolute;
+        background-color: $secondaryColor;
+        flex-direction: column;
+        z-index: 10;
+        width: 40%;
+        right: -40%;
+        top: 14%;
+        transition: all 0.2s;
+        display: none;
+            li {
+                border-bottom: 1px solid $thirdColor;
+                text-align: center;
+                width: 100%;
+                padding: 20px;
+            }
+    }
+
+    input[type=checkbox]:checked + .top-ul {
+        right: 0;
+        display: block;
+    }
+
+    header.home img {
+        width: 100%;
+        top: 100%;
+    }
+}
+ 
